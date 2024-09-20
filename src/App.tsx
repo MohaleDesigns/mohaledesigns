@@ -2,15 +2,18 @@ import "./App.css";
 import "@mantine/core/styles.css";
 
 import { MantineProvider, Text } from "@mantine/core";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import StackSlider from "./components/StackSlider";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
     <MantineProvider>
-      <div className="flex justify-center items-center p-5">
-        <Text size="50px" c="#0B5ED7" fw="bolder">
-          Mohale Designs
-        </Text>
-      </div>
+      <Header />
+      <StackSlider />
+      <CallToAction />
+      <Footer />
     </MantineProvider>
   );
 }
